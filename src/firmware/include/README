@@ -1,0 +1,16 @@
+É importante que exista um arquivo `secrets.hpp` na pasta `include/` com o seguinte conteúdo:
+```cpp
+#ifndef __CFG_SECRETS_HPP__
+#define __CFG_SECRETS_HPP__
+
+#include <Arduino.h>
+
+namespace secrets
+{
+    String network_SSID = "SEU-SSID";
+    String network_password = "SUA-SENHA";
+    String server_name = "SEU-SERVIDOR";
+}
+
+#endif // __CFG_SECRETS_HPP__
+```
